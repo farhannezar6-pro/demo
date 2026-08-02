@@ -3,7 +3,9 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![Scrapy](https://img.shields.io/badge/Scrapy-2.11-60A839?style=flat-square&logo=scrapy&logoColor=white)](https://scrapy.org)
 [![Playwright](https://img.shields.io/badge/Playwright-enabled-2EAD33?style=flat-square&logo=playwright&logoColor=white)](https://playwright.dev)
+[![Repository](https://img.shields.io/badge/Repository-farhannezar6--pro%2Fdemo-blue?style=flat-square&logo=github)](https://github.com/farhannezar6-pro/demo)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
+
 
 > A professional, browser-powered web scraper built on Scrapy and Playwright. Capable of bypassing modern bot-protection systems and exporting clean, structured data in three formats simultaneously.
 
