@@ -34,3 +34,9 @@ desktop.ini
 htmlcov/
 .coverage
 coverage.xml
+
+# Temp and Browser profiles
+temp*.html
+playwright_profile*/
+scratch/
+

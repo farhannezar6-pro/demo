@@ -1,0 +1,50 @@
+# ============================================================
+# Scraper Configuration - UniGuiders Universities
+# ============================================================
+
+# Target configuration
+target_url: "https://uniguiders.com/search-university/bachelor"
+base_url: "https://uniguiders.com"
+
+# Output configuration
+output:
+  project: "uniguiders"       # Website/Project name
+  folder: "universities"      # Section Name
+  filename: "universities"    # File name
+  csv: true
+  json: true
+  sqlite: true
+
+# Authentication (not needed)
+auth:
+  enabled: false
+  username_field: "username"
+  password_field: "password"
+  submit_selector: "button[type=submit]"
+  success_selector: ".dashboard"
+
+# Extraction mode: "sections" for heading-based pages, "list" for table/card pages
+extraction_mode: "list"
+
+# CSS Selectors for list-based extraction
+selectors:
+  items_list: "a[href*='/university/']"  # Links to university pages
+  title: "::text"                        # University name from link text
+  description: ""                        # No description in list
+  price: ""                              # Fees if available
+  link: "::attr(href)"                   # University link
+  date: ""                               # No date
+  image: ""                              # No image in list
+
+# Section-specific selectors (used when extraction_mode = "sections")
+section_selectors:
+  title: "a"
+  description_sibling: "p"
+  read_more_text: "Read More"
+
+# Pagination settings
+pagination:
+  type: "url_param"
+  next_selector: ""
+  url_param: "page"
+  max_pages: 10  # Assuming fewer pages
